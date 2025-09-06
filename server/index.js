@@ -13,7 +13,7 @@ app.use(cors({
 require("dotenv").config;
 
 
-app.get('/', (req, res)=>{
+app.get('/',(req, res)=>{
  res.send({
     activeStatus:true,
     error:false,
