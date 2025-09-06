@@ -13,12 +13,6 @@ app.use(cors({
 require("dotenv").config;
 
 
-app.get('/',(req, res)=>{
- res.send({
-    activeStatus:true,
-    error:false,
- })
-})
 
 
 // routing ke liye url create krege //
@@ -26,6 +20,12 @@ app.get('/',(req, res)=>{
 const { router } = require("./Router/enquiryRoute");
 app.use('/web', router)
 
+app.get('/',(req, res)=>{
+ res.send({
+    activeStatus:true,
+    error:false,
+ })
+})
 
 app.listen(8000, ()=>{
     console.log("server is running")
