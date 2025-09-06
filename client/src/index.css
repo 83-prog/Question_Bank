@@ -1,0 +1,21 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+    .md\:text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+        overflow: hidden;
+    }
+}
+
+.slick-slider{
+  overflow: hidden;
+}
+
+
+
