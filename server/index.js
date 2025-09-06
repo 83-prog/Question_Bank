@@ -13,12 +13,11 @@ app.use(cors({
 require("dotenv").config;
 
 
-app.get('/', (req, res, next)=>{
-    try {
-        res.send("Server is Running ....../")
-    } catch (error) {
-      console.log(error)  
-    }
+app.get('/', (req, res)=>{
+ res.send({
+    activeStatus:true,
+    error:false,
+ })
 })
 
 
