@@ -13,6 +13,15 @@ app.use(cors({
 require("dotenv").config;
 
 
+app.get('/', (req, res, next)=>{
+    try {
+        res.send("Server is Running ....../")
+    } catch (error) {
+      console.log(error)  
+    }
+})
+
+
 // routing ke liye url create krege //
 // yai Aak trha hse middle were hai //
 const { router } = require("./Router/enquiryRoute");
